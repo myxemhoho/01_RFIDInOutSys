@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="aee3198c-7a19-4c82-af7a-9cb0a26fb65a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.6.127:8731/GoldServer/DeviceService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="35c20e8e-6ce9-4920-a11f-7a32dee25007" SourceId="1" SourceUrl="http://192.168.6.127:8731/GoldServer/DeviceService/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="c38ed919-8c3e-4831-8856-213026c1ade0" SourceId="1" SourceUrl="http://192.168.6.127:8731/GoldServer/DeviceService/mex" />
+    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="fb065d42-d07f-40d1-9454-9abe079c6d4f" SourceId="1" SourceUrl="http://192.168.6.127:8731/GoldServer/DeviceService/mex" />
+    <MetadataFile FileName="Arrays1.xsd" MetadataType="Schema" ID="1df11e6d-ea37-4995-a990-e014d09dc7b8" SourceId="1" SourceUrl="http://192.168.6.127:8731/GoldServer/DeviceService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

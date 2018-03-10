@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Gold.SaleCargoSetting.SaleAllocationQuery" Collapsed="true">
+    <Position X="1.25" Y="2.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAAACEACAAFAAIEIBYhAEQCQEAAAARAACACAAAYIgAA=</HashCode>
+      <FileName>SaleCargoSetting\SaleAllocationQuery.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.SaleCargoSetting.SaleAllocationQueryRpt" Collapsed="true">
+    <Position X="3.5" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAA=</HashCode>
+      <FileName>SaleCargoSetting\SaleAllocationQueryRpt.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.SaleCargoSetting.SaleAllocationSet" Collapsed="true">
+    <Position X="1.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAgQCEACAAEAAAAIBQhAEQAQEAggBQAAAAAAAAIIgAA=</HashCode>
+      <FileName>SaleCargoSetting\SaleAllocationSet.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.SaleCargoSetting.SaleCargoNewsSet" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAAAAAABAACAAABAgAAAAwAAgAABQAAAAAAAMAgAA=</HashCode>
+      <FileName>SaleCargoSetting\SaleCargoNewsSet.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.SaleCargoSetting.SaleCargoSet" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAAEAiAAEACAAIBQoAAACQEAgEABAAAAAAAAIIgAA=</HashCode>
+      <FileName>SaleCargoSetting\SaleCargoSet.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

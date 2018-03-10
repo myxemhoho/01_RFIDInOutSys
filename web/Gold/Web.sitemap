@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="" title="" description="" roles="*">
+    <siteMapNode url="Default.aspx" title="首页" description="" roles="*" />
+    <siteMapNode url="" title="订单管理" description="" roles="系统管理员,物流部操作员,业务部门操作员">
+      <siteMapNode url="Order/PurchaseOrderMgr.aspx" title="采购订单" roles="系统管理员,物流部操作员,业务部门操作员">
+        <siteMapNode url="Order/PurchaseOrderView.aspx" title="订单详情" />
+        <siteMapNode url="Order/PurchaseOrderFromNC.aspx" title="NC采购订单数据导入" />
+      </siteMapNode>
+      <siteMapNode url="Order/SalesOrderMgr.aspx" title="销售订单" roles="系统管理员,物流部操作员,业务部门操作员">
+        <siteMapNode url="Order/SalesOrderView.aspx" title="订单详情" />
+        <siteMapNode url="Order/SalesOrderFromNC.aspx" title="NC销售订单数据导入" />
+      </siteMapNode>
+      <siteMapNode url="Order/ShiftOrderMgr.aspx" title="转库单" roles="系统管理员,物流部操作员,业务部门操作员">
+        <siteMapNode url="Order/ShiftOrderView.aspx" title="订单详情" />
+        <siteMapNode url="Order/ShiftOrderFromNC.aspx" title="NC转库单数据导入" />
+      </siteMapNode>
+      <siteMapNode url="Order/TransferOrderMgr.aspx" title="调拨订单" roles="系统管理员,物流部操作员,业务部门操作员">
+        <siteMapNode url="Order/TransferOrderView.aspx" title="订单详情" />
+        <siteMapNode url="Order/TransferOrderFromNC.aspx" title="NC调拨订单数据导入" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="库存管理" description="" roles="系统管理员,物流部操作员,业务部门操作员">
+      <siteMapNode url="StockMove/StockInReg.aspx" title="入库登记" roles="系统管理员,物流部操作员,业务部门操作员" />
+      <siteMapNode url="StockMove/StockOutReg.aspx" title="出库登记" roles="系统管理员,物流部操作员,业务部门操作员" />
+      <siteMapNode url="StockMove/StockInMgr.aspx" title="入库单管理" roles="系统管理员,物流部操作员,业务部门操作员">
+        <siteMapNode url="StockMove/StockInCancel.aspx" title="撤销单详情" />
+        <siteMapNode url="StockMove/StockInFromNC.aspx" title="NC其他入库单数据导入"/>
+      </siteMapNode>
+      <siteMapNode url="StockMove/StockOutMgr.aspx" title="出库单管理" roles="系统管理员,物流部操作员,业务部门操作员">
+        <siteMapNode url="StockMove/StockOutCancel.aspx" title="撤销单详情" />
+        <siteMapNode url="StockMove/StockOutFromNC.aspx" title="NC其他出库单数据导入"/>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="可售商品管理" description="" roles="普通用户,系统管理员,业务部门操作员,物流部操作员">
+      <siteMapNode url="SaleCargoSetting/SaleAllocationQuery.aspx" title="可售商品查询/报表" roles="普通用户,系统管理员,业务部门操作员,物流部操作员">
+        <siteMapNode url="SaleCargoSetting/SaleAllocationQueryRpt.aspx" title="可售商品报表" />
+      </siteMapNode>
+      <siteMapNode url="SaleCargoSetting/SaleCargoSet.aspx" title="可售商品设置" roles="系统管理员,物流部操作员" />
+      <siteMapNode url="SaleCargoSetting/SaleAllocationSet.aspx" title="分配量设置" roles="系统管理员,物流部操作员" />
+      <siteMapNode url="SaleCargoSetting/SaleCargoNewsSet.aspx" title="消息发布" roles="系统管理员,物流部操作员" />
+    </siteMapNode>
+    <siteMapNode url="" title="台账及报表" description="" roles="系统管理员,业务部门操作员,物流部操作员">
+      <!--<siteMapNode url="Query/InventoryBookQty.aspx" title="库存台账(月合计)" />-->
+      <siteMapNode url="Query/InventoryBookQtyGroup.aspx" title="库存台账(出入库流水账)" roles="系统管理员,物流部操作员,业务部门操作员" />
+      <siteMapNode url="Query/InOutCollectList.aspx" title="库存商品收发汇总表" roles="系统管理员,物流部操作员,业务部门操作员">
+        <siteMapNode url="Query/InOutCollectListRpt.aspx" title="库存商品收发汇总表报表" />
+      </siteMapNode>
+      <siteMapNode url="Query/CargoStorageDetailList.aspx" title="库存商品存放明细表" roles="系统管理员,物流部操作员,业务部门操作员">
+        <siteMapNode url="Query/CargoStorageDetailListRpt.aspx" title="库存商品存放明细表报表" />
+      </siteMapNode>
+      <siteMapNode url="Query/PackageStatisticList.aspx" title="包装统计表" roles="系统管理员,物流部操作员,业务部门操作员" />
+      <siteMapNode url="Query/StorePicAccountList.aspx" title="存提表" roles="系统管理员,物流部操作员,业务部门操作员">
+        <siteMapNode url="Query/StorePicAccountEdit.aspx" title="存提表编辑" roles="系统管理员,物流部操作员" />
+        <siteMapNode url="Query/StorePicAccountListRpt.aspx" title="存提表报表" roles="系统管理员,物流部操作员" />
+      </siteMapNode>
+      <siteMapNode url="Query/StockCountingPlanList.aspx" title="库存盘点管理" roles="系统管理员,物流部操作员,业务部门操作员">
+        <siteMapNode url="Query/StockCountingPlanEdit.aspx" title="盘点计划单编辑" />
+        <siteMapNode url="Query/StockCountingPlanView.aspx" title="盘点结果查看" />
+      </siteMapNode>
+      <siteMapNode url="Query/CargoSafeInventoryList.aspx" title="安全库存量设置" roles="系统管理员,物流部操作员" />
+      <siteMapNode url="Query/CargoSafeRemindList.aspx" title="查看库存提醒" roles="系统管理员,物流部操作员" />
+    </siteMapNode>
+    <siteMapNode url="" title="基础资料管理" description="" roles="系统管理员,物流部操作员">
+      <siteMapNode url="BaseInfoSetting/WareHouseList.aspx" title="仓库信息管理" roles="系统管理员,物流部操作员">
+        <siteMapNode url="BaseInfoSetting/WareHouseEdit.aspx" title="仓库信息编辑" />
+      </siteMapNode>
+      <siteMapNode url="BaseInfoSetting/StorageBinList.aspx" title="层位信息管理" roles="系统管理员,物流部操作员" />
+      <siteMapNode url="BaseInfoSetting/CargoList.aspx" title="商品资料管理" roles="系统管理员,物流部操作员">
+        <siteMapNode url="BaseInfoSetting/CargoEdit.aspx" title="商品资料编辑" />
+        <siteMapNode url="BaseInfoSetting/CargoInfoImport.aspx" title="商品资料导入" />
+        <siteMapNode url="BaseInfoSetting/CargoPriceImport.aspx" title="商品价格导入" />
+      </siteMapNode>
+      <siteMapNode url="BaseInfoSetting/ModelList.aspx" title="商品型号管理" roles="系统管理员,物流部操作员" />
+      <siteMapNode url="BaseInfoSetting/SpecList.aspx" title="商品规格管理" roles="系统管理员,物流部操作员" />
+      <siteMapNode url="BaseInfoSetting/CargoTagList.aspx" title="商品电子标签查询" roles="系统管理员,物流部操作员" />
+      <siteMapNode url="BaseInfoSetting/PackagesList.aspx" title="包装信息管理" roles="系统管理员,物流部操作员" />
+    </siteMapNode>
+    <siteMapNode url="" title="系统管理" description="" roles="系统管理员">
+      <siteMapNode url="SystemSetting/UserMgr.aspx" title="用户管理" roles="系统管理员" />
+      <siteMapNode url="SystemSetting/Departments.aspx" title="部门管理" roles="系统管理员" />
+      <siteMapNode url="SystemSetting/Positions.aspx" title="岗位管理" roles="系统管理员" />
+      <siteMapNode url="SystemSetting/DictionaryMgr.aspx" title="数据字典" roles="系统管理员" />
+      <siteMapNode url="SystemSetting/RolesRight.aspx" title="权限管理" roles="系统管理员" />
+      <!--<siteMapNode url="SLFileUploadTestPage.aspx" title="关于" />-->
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

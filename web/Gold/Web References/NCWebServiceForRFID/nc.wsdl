@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns0="http://ws.cxbj.uapeai.itf.nc/IBillXMLExportService" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:jaxws="http://java.sun.com/xml/ns/jaxws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="2.0" targetNamespace="http://ws.cxbj.uapeai.itf.nc/IBillXMLExportService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <jaxws:bindings>
+    <jaxws:package name="nc.itf.uapeai.cxbj.ws" />
+  </jaxws:bindings>
+  <wsdl:types>
+    <xsd:schema xmlns:ns="http://ws.cxbj.uapeai.itf.nc/IBillXMLExportService" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.cxbj.uapeai.itf.nc/IBillXMLExportService" jaxb:version="2.0">
+      <xsd:annotation>
+        <xsd:appinfo>
+          <jaxb:schemaBindings>
+            <jaxb:package name="nc.itf.uapeai.cxbj.ws" />
+          </jaxb:schemaBindings>
+        </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:element name="BillInfoQuery">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="string" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="string1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="string2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="string3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="int" nillable="true" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BillInfoQueryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="return" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BillDetailQuery">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="string" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="string1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="string2" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BillDetailQueryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="return" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BasicInfoQuery">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="string" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="string1" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BasicInfoQueryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="return" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="BasicInfoQueryResponse">
+    <wsdl:part name="parameters" element="ns0:BasicInfoQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="BillDetailQueryResponse">
+    <wsdl:part name="parameters" element="ns0:BillDetailQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="BillInfoQueryResponse">
+    <wsdl:part name="parameters" element="ns0:BillInfoQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="BillInfoQueryRequest">
+    <wsdl:part name="parameters" element="ns0:BillInfoQuery" />
+  </wsdl:message>
+  <wsdl:message name="BasicInfoQueryRequest">
+    <wsdl:part name="parameters" element="ns0:BasicInfoQuery" />
+  </wsdl:message>
+  <wsdl:message name="BillDetailQueryRequest">
+    <wsdl:part name="parameters" element="ns0:BillDetailQuery" />
+  </wsdl:message>
+  <wsdl:portType name="IBillXMLExportServicePortType">
+    <wsdl:operation name="BillInfoQuery">
+      <wsdl:input wsaw:Action="urn:BillInfoQuery" message="ns0:BillInfoQueryRequest" />
+      <wsdl:output wsaw:Action="urn:BillInfoQueryResponse" message="ns0:BillInfoQueryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="BillDetailQuery">
+      <wsdl:input wsaw:Action="urn:BillDetailQuery" message="ns0:BillDetailQueryRequest" />
+      <wsdl:output wsaw:Action="urn:BillDetailQueryResponse" message="ns0:BillDetailQueryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="BasicInfoQuery">
+      <wsdl:input wsaw:Action="urn:BasicInfoQuery" message="ns0:BasicInfoQueryRequest" />
+      <wsdl:output wsaw:Action="urn:BasicInfoQueryResponse" message="ns0:BasicInfoQueryResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IBillXMLExportServiceSOAP11Binding" type="ns0:IBillXMLExportServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BillInfoQuery">
+      <soap:operation soapAction="urn:BillInfoQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BillDetailQuery">
+      <soap:operation soapAction="urn:BillDetailQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BasicInfoQuery">
+      <soap:operation soapAction="urn:BasicInfoQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IBillXMLExportService">
+    <wsdl:port name="IBillXMLExportServiceSOAP11port_http" binding="ns0:IBillXMLExportServiceSOAP11Binding">
+      <soap:address location="http://10.1.18.19:8087/uapws/service/nc.itf.uapeai.cxbj.ws.IBillXMLExportService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Gold.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>RFID 库房管理系统</title>
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server"><!--如果遇到js运行时错误500，可以将ScriptManager设置此属性以显示异常详细信息, EnablePartialRendering="false"-->
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="true" EnableScriptLocalization="true" >
+    </asp:ScriptManager>
+    <div class="page">
+        <div class="header">
+            <div class="title">
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Login.aspx" id="HeadLoginStatus" runat="server">登录</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        欢迎您！ <span class="bold">
+                            <asp:LoginName ID="HeadLoginName" runat="server" />
+                        </span>&nbsp;[<asp:LinkButton ID="lbtnChangePwd" PostBackUrl="~/Account/ChangePassword.aspx" runat="server">修改密码</asp:LinkButton><%--<a href="~/Account/ChangePassword.aspx">修改密码</a>--%>]&nbsp; [
+                        <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="注销"
+                            LogoutPageUrl="~/" onloggingout="HeadLoginStatus_LoggingOut" />
+                        ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+        </div>
+        <div class="topmenu">
+            <div class="menu_left">
+                &nbsp;
+            </div>
+            <div class="menu_body">
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                    SkipLinkText="" IncludeStyleBlock="false" Orientation="Horizontal" MaximumDynamicDisplayLevels="1" 
+                    DataSourceID="SiteMapDataSource1" ondatabound="NavigationMenu_DataBound">                    
+                </asp:Menu><!--class="menu"-->
+                <%--StaticBottomSeparatorImageUrl="~/Styles/images/bg_menuspliter.png"   menu控件的分隔图片发布后不能正常在主页和子文件夹页面显示，暂时注释--%>
+            </div>
+            <div class="menu_right">
+            </div>
+        </div>
+        <div class="main">
+            <div class="path">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server" SkipLinkText="" >
+                    <RootNodeTemplate>
+                        <%--<img src="Styles/images/siteMapPath.png" alt="" />--%>
+                        <asp:Image ID="Image1" ImageUrl="~/Styles/images/siteMapPath.png" runat="server" />
+                    </RootNodeTemplate>
+                </asp:SiteMapPath>
+            </div>
+
+            <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
+                <ContentTemplate>
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </ContentTemplate>
+            </asp:UpdatePanel><br />
+        </div>
+        <div class="clear">
+        </div>
+    <div class="footer">
+        <p style=" vertical-align:middle; padding-top:10px;">Copyright(C) 2012 深圳市远望谷信息技术股份有限公司&nbsp;&nbsp;&nbsp;&nbsp;
+        All Rights Reserved.</p>
+    </div>
+    </div>
+    
+    </form>
+
+    <!--下面的代码是微软提供为解决UpdatePanel在IE中慢的代码
+    Add the JavaScript below immediately before the closing </body> element of the page experiencing the delay.
+    -->
+    <script language="javascript" type="text/javascript">
+
+        function disposeTree(sender, args) {
+            var elements = args.get_panelsUpdating();
+            for (var i = elements.length - 1; i >= 0; i--) {
+                var element = elements[i];
+                var allnodes = element.getElementsByTagName('*'),
+                length = allnodes.length;
+                var nodes = new Array(length)
+                for (var k = 0; k < length; k++) {
+                    nodes[k] = allnodes[k];
+                }
+                for (var j = 0, l = nodes.length; j < l; j++) {
+                    var node = nodes[j];
+                    if (node.nodeType === 1) {
+                        if (node.dispose && typeof (node.dispose) === "function") {
+                            node.dispose();
+                        }
+                        else if (node.control && typeof (node.control.dispose) === "function") {
+                            node.control.dispose();
+                        }
+
+                        var behaviors = node._behaviors;
+                        if (behaviors) {
+                            behaviors = Array.apply(null, behaviors);
+                            for (var k = behaviors.length - 1; k >= 0; k--) {
+                                behaviors[k].dispose();
+                            }
+                        }
+                    }
+                }
+                element.innerHTML = "";
+            }
+        }
+
+
+        Sys.WebForms.PageRequestManager.getInstance().add_pageLoading(disposeTree);
+
+</script>
+</body>
+</html>

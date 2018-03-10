@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DeviceService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDeviceService_WcfTest_InputMessage">
+    <wsdl:part name="parameters" element="tns:WcfTest" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_WcfTest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WcfTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_DeviceTest_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceTest" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_DeviceTest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_TagControl_InputMessage">
+    <wsdl:part name="parameters" element="tns:TagControl" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_TagControl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TagControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_TagShow_InputMessage">
+    <wsdl:part name="parameters" element="tns:TagShow" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceService_TagShow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TagShowResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDeviceService">
+    <wsdl:operation name="WcfTest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/WcfTest" message="tns:IDeviceService_WcfTest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/WcfTestResponse" message="tns:IDeviceService_WcfTest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeviceTest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/DeviceTest" message="tns:IDeviceService_DeviceTest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/DeviceTestResponse" message="tns:IDeviceService_DeviceTest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TagControl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/TagControl" message="tns:IDeviceService_TagControl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/TagControlResponse" message="tns:IDeviceService_TagControl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TagShow">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDeviceService/TagShow" message="tns:IDeviceService_TagShow_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDeviceService/TagShowResponse" message="tns:IDeviceService_TagShow_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDeviceService" type="tns:IDeviceService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WcfTest">
+      <soap:operation soapAction="http://tempuri.org/IDeviceService/WcfTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeviceTest">
+      <soap:operation soapAction="http://tempuri.org/IDeviceService/DeviceTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TagControl">
+      <soap:operation soapAction="http://tempuri.org/IDeviceService/TagControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TagShow">
+      <soap:operation soapAction="http://tempuri.org/IDeviceService/TagShow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DeviceService">
+    <wsdl:port name="BasicHttpBinding_IDeviceService" binding="tns:BasicHttpBinding_IDeviceService">
+      <soap:address location="http://192.168.6.102:8731/GoldServer/DeviceService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Gold.Query.CargoSafeInventoryList" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IgIACEACABEAAAAIBQpAEQAZEAAAAQQAAAAAAAYIggA=</HashCode>
+      <FileName>Query\CargoSafeInventoryList.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.CargoSafeRemindList" Collapsed="true">
+    <Position X="3" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IAAACEACABEAAAQIBQhAEQAQEAgAAQAAAAAAAAYIgAA=</HashCode>
+      <FileName>Query\CargoSafeRemindList.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.CargoStorageDetailList" Collapsed="true">
+    <Position X="3" Y="1.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IGgIgEACBBEASAAILZhAQACQEGgBDIAIAQCEQAcIggQ=</HashCode>
+      <FileName>Query\CargoStorageDetailList.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.InOutCollectList" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IEAAAEBSABEACEAYBZgBEBQQEAgIBYACAAogABcMoUA=</HashCode>
+      <FileName>Query\InOutCollectList.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.CargoStorageDetailListRpt" Collapsed="true">
+    <Position X="3" Y="2" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IAAABAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAYAAAA=</HashCode>
+      <FileName>Query\CargoStorageDetailListRpt.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.InOutCollectListRpt" Collapsed="true">
+    <Position X="0.5" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAAABAAAAAAAAAAAAAIAAAAAAAIAAAAAAAAAAAYAAAA=</HashCode>
+      <FileName>Query\InOutCollectListRpt.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.InventoryBookQtyGroup" Collapsed="true">
+    <Position X="6" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAAANAAAABQAAoAAgARgwQCIQAToAAAAQmABIAiAE=</HashCode>
+      <FileName>Query\InventoryBookQtyGroup.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.PackageStatisticList" Collapsed="true">
+    <Position X="3" Y="3.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>JEkAAEUAQBAgBJCAEYpABACZAAAAIBQAQACBAAIIgQQ=</HashCode>
+      <FileName>Query\PackageStatisticList.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.StockCountingPlanEdit" Collapsed="true">
+    <Position X="6" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BAAABAAAABCAAACAAAAAAAAAAAAAJBAgAAADQIIBAAg=</HashCode>
+      <FileName>Query\StockCountingPlanEdit.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.StockCountingPlanList" Collapsed="true">
+    <Position X="6" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IEAQAEAAABAgSEAABRgQAQBQAIgAAQACAAIAAAYIoAg=</HashCode>
+      <FileName>Query\StockCountingPlanList.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.StockCountingPlanView" Collapsed="true">
+    <Position X="6" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IEIAgAAABQAASAAABBgAQQBQAEggAAQAAAAAAAYAgAA=</HashCode>
+      <FileName>Query\StockCountingPlanView.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.StorePicAccountEdit" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BCAQBIAABBMhAAiIKAjIBoAABCAlIBwEQAACAIcBQiA=</HashCode>
+      <FileName>Query\StorePicAccountEdit.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.StorePicAccountList" Collapsed="true">
+    <Position X="3" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IECAAEAQABEACEA4BZoBRxAQgIgIDQgCAAoAAIcM4UA=</HashCode>
+      <FileName>Query\StorePicAccountList.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gold.Query.StorePicAccountListRpt" Collapsed="true">
+    <Position X="6" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAABAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAYAAAA=</HashCode>
+      <FileName>Query\StorePicAccountListRpt.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>
